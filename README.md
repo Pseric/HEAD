@@ -3,7 +3,7 @@
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 
-一份關於任何你可以加入你網頁 `<head>` 部分的列表。
+一份關於任何你可以加入你網頁 `<head>` 部分的列表。 
 
 ## 目錄
 
