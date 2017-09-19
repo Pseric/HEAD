@@ -3,42 +3,42 @@
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 
-一份關於任何你可以加入你網頁 `<head>` 部分的列表。 
+一份關於任何你可以加入你網頁 `<head>` 部分的列表。
 
 ## 目錄
 
-- [基本推薦](#recommended-minimum)
-- [網頁元件](#elements)
-- [Meta 標籤](#meta)
-- [鏈結](#link)
-  - [網站圖示](#favicons)
-- [社群網站](#social)
+- [基本推薦](#基本推薦)
+- [網頁元件](#網頁元件)
+- [Meta 標籤](#Meta 標籤)
+- [鏈結](#鏈結)
+  - [網站圖示](#網站圖示)
+- [社群網站](#社群網站)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [Twitter Cards](#twitter-cards)
   - [Google+ / Schema.org](#google--schemaorg)
   - [OEmbed](#oembed)
-- [瀏覽器 / 平台](#browsers--platforms)
+- [瀏覽器 / 平台](#瀏覽器--平台)
   - [Apple iOS](#apple-ios)
   - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-- [中國瀏覽器](#browsers-chinese)
-  - [360 瀏覽器](#360-browser)
-  - [QQ 行動瀏覽器](#qq-mobile-browser)
-  - [UC 行動瀏覽器](#uc-mobile-browser)
-- [應用程式鏈結](#app-links)
-- [注意](#notes)
-  - [效能](#performance)
-- [其他資源](#other-resources)
-- [相關專案](#related-projects)
-- [其他格式](#other-formats)
-- [翻譯](#translations)
-- [貢獻](#contributing)
-- [貢獻者](#contributors)
-- [作者](#author)
-- [授權](#license)
+- [中國瀏覽器](#中國瀏覽器)
+  - [360 瀏覽器](#360-瀏覽器)
+  - [QQ 行動瀏覽器](#qq-行動瀏覽器)
+  - [UC 行動瀏覽器](#uc-行動瀏覽器)
+- [應用程式鏈結](#應用程式鏈結)
+- [注意](#注意)
+  - [效能](#效能)
+- [其他資源](#其他資源)
+- [相關專案](#相關專案)
+- [其他格式](#其他格式)
+- [翻譯](#翻譯)
+- [貢獻](#貢獻)
+- [貢獻者](#貢獻者)
+- [作者](#作者)
+- [授權](#授權)
 
 ## 基本推薦
 
@@ -52,7 +52,7 @@
 <title>頁面標題</title>
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 網頁元件
 
@@ -76,7 +76,7 @@
 <noscript><!--無 JS 時的替代方案--></noscript>
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## Meta 標籤
 
@@ -162,7 +162,7 @@
 - [ICBM - 維基百科](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [地理標記 - 維基百科](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 鏈結
 
@@ -239,7 +239,7 @@
 <!-- 更多資訊：https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### 網站圖示
 
@@ -256,7 +256,7 @@
 - [所有關於網站圖示（及觸控圖示）資訊](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - [Favicon 對照表](https://github.com/audreyr/favicon-cheat-sheet)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 社群網站
 
@@ -277,7 +277,7 @@
 - [Facebook 的 Open Graph 標記](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph 協定](http://ogp.me/)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### Facebook Instant Articles
 
@@ -295,7 +295,7 @@
 - [Facebook Instant Articles：建立文章](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
 - [Instant Articles：格式參考](https://developers.facebook.com/docs/instant-articles/reference)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### Twitter Cards
 
@@ -312,7 +312,7 @@
 - [Twitter Cards：入門指南](https://dev.twitter.com/cards/getting-started)
 - [Twitter Card 驗證工具](https://cards-dev.twitter.com/validator)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### Google+ / Schema.org
 
@@ -323,7 +323,7 @@
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### Pinterest
 
@@ -333,7 +333,7 @@
 <meta name="pinterest" content="nopin" description="抱歉，你不能從我的網站儲存內容！">
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### OEmbed
 
@@ -348,7 +348,7 @@
 
 - [oEmbed 格式](http://oembed.com/)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 瀏覽器 / 平台
 
@@ -382,7 +382,7 @@
 
 - [Apple Meta 標籤](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### Apple Safari
 
@@ -391,7 +391,7 @@
 <link rel="mask-icon" href="/path/to/icon.svg" color="red">
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### Google Android
 
@@ -407,7 +407,7 @@
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### Google Chrome
 
@@ -418,7 +418,7 @@
 <meta name="google" content="notranslate">
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### Google Chrome 行動版（只針對 Android）
 
@@ -438,7 +438,7 @@
 
 - [Google 開發者](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### Microsoft Internet Explorer
 
@@ -466,7 +466,7 @@
 <meta name="msapplication-task-separator" content="1">
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 應用程式鏈結
 
@@ -486,7 +486,7 @@
 
 - [應用程式鏈結說明文件](http://applinks.org/documentation/)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 中國瀏覽器
 
@@ -497,7 +497,7 @@
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### QQ 行動瀏覽器
 
@@ -510,7 +510,7 @@
 <meta name="x5-page-mode" content="app">
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### UC 行動瀏覽器
 
@@ -533,7 +533,7 @@
 
 - [UC 瀏覽器說明文件](http://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 注意
 
@@ -546,14 +546,14 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 ```
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 其他資源
 
 - [HTML5 模版文件：HTML 標籤](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - [HTML5 模版文件：擴展和自定](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 相關專案
 
@@ -562,13 +562,13 @@
 - [head-it](https://github.com/hemanth/head-it) - CLI 介面的 `HEAD` 程式碼
 - [vue-head](https://github.com/ktquez/vue-head) - 在 Vue.js 中操作 `HEAD` 標籤的 Meta 資訊
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 其他格式
 
 - [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 翻譯
 
@@ -580,7 +580,7 @@
 - [土耳其語](https://github.com/mkg0/HEAD)
 - [韓語](https://github.com/Lutece/HEAD)
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 貢獻
 
@@ -607,19 +607,19 @@
 
 你可以透過 [Jekyll 說明文件](https://jekyllrb.com/docs/home/) 來了解 Jekyll 如何在該分支上運作。
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ### 貢獻者
 
 看看這些超級棒的[貢獻者們](https://github.com/joshbuchea/HEAD/graphs/contributors)。
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 作者
 
 **[Josh Buchea](http://joshbuchea.com/)**
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
 
 ## 授權
 
@@ -627,4 +627,4 @@
 
 在法律範圍內，[Josh Buchea](http://joshbuchea.com) 已經放棄這項工作的所有版權以及相關或鄰近的權利。
 
-**[⬆ 返回頂端](#table-of-contents)**
+**[⬆ 返回頂端](#目錄)**
