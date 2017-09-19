@@ -1,264 +1,264 @@
-# \<head> cheatsheet
+# \<head> 對照表
 
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 
-A list of everything that could go in the `<head>` of your document
+一份關於任何你可以加入你網頁 `<head>` 部分的列表。
 
-## Table of Contents
+## 目錄
 
-- [Recommended Minimum](#recommended-minimum)
-- [Elements](#elements)
-- [Meta](#meta)
-- [Link](#link)
-  - [Favicons](#favicons)
-- [Social](#social)
+- [基本推薦](#recommended-minimum)
+- [網頁元件](#elements)
+- [Meta 標籤](#meta)
+- [鏈結](#link)
+  - [網站圖示](#favicons)
+- [社群網站](#social)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [Twitter Cards](#twitter-cards)
   - [Google+ / Schema.org](#google--schemaorg)
   - [OEmbed](#oembed)
-- [Browsers / Platforms](#browsers--platforms)
+- [瀏覽器 / 平台](#browsers--platforms)
   - [Apple iOS](#apple-ios)
   - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-- [Browsers (Chinese)](#browsers-chinese)
-  - [360 Browser](#360-browser)
-  - [QQ Mobile Browser](#qq-mobile-browser)
-  - [UC Mobile Browser](#uc-mobile-browser)
-- [App Links](#app-links)
-- [Notes](#notes)
-  - [Performance](#performance)
-- [Other Resources](#other-resources)
-- [Related Projects](#related-projects)
-- [Other Formats](#other-formats)
-- [Translations](#translations)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [Author](#author)
-- [License](#license)
+- [中國瀏覽器](#browsers-chinese)
+  - [360 瀏覽器](#360-browser)
+  - [QQ 行動瀏覽器](#qq-mobile-browser)
+  - [UC 行動瀏覽器](#uc-mobile-browser)
+- [應用程式鏈結](#app-links)
+- [注意](#notes)
+  - [效能](#performance)
+- [其他資源](#other-resources)
+- [相關專案](#related-projects)
+- [其他格式](#other-formats)
+- [翻譯](#translations)
+- [貢獻](#contributing)
+- [貢獻者](#contributors)
+- [作者](#author)
+- [授權](#license)
 
-## Recommended Minimum
+## 基本推薦
 
-Below are the essential tags for basic, minimalist websites:
+以下是最小化、最低限度的網站基本標籤：
 
 ```html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Page Title</title>
+<!-- 以上三個 meta 標籤 *必須* 放在 head 最前面；其他任何 head 內容必須放在這些標籤 *後面* -->
+<title>頁面標題</title>
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Elements
+## 網頁元件
 
 ``` html
-<!-- Document Title -->
-<title>Page Title</title>
+<!-- 文件標題 -->
+<title>頁面標題</title>
 
-<!-- Base URL to use for all relative URLs contained within the document -->
+<!-- 基本 URL 用於文件中包含的所有相關 URLs -->
 <base href="https://example.com/page.html">
 
-<!-- External CSS -->
+<!-- 外部 CSS -->
 <link rel="stylesheet" href="styles.css">
 
-<!-- In-document CSS -->
+<!-- 文件內的 CSS -->
 <style>
   /* ... */
 </style>
 
 <!-- JavaScript -->
 <script src="script.js"></script>
-<noscript><!--no JS alternative--></noscript>
+<noscript><!--無 JS 時的替代方案--></noscript>
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Meta
+## Meta 標籤
 
 ``` html
-<meta charset="utf-8"> <!-- set character encoding for the document -->
+<meta charset="utf-8"> <!-- 設定文件的字元編碼 -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- 以上三個 meta 標籤 *必須* 放在 head 最前面；其他任何 head 內容必須放在這些標籤 *後面* -->
 
-<!-- Allows control over where resources are loaded from -->
+<!-- 設定允許從那裡載入資源 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-<!-- Place as early in the document as possible -->
-<!-- Only applies to content below this tag -->
+<!-- 盡早放置於文件中 -->
+<!-- 僅對於該標籤後的內容有效 -->
 
-<!-- Name of web application (only should be used if the website is used as an app) -->
-<meta name="application-name" content="Application Name">
+<!-- 網頁應用程式名稱（只在網站被做為一個應用程式時才會使用） -->
+<meta name="application-name" content="應用程式名稱">
 
-<!-- Short description of the page (limit to 150 characters) -->
-<!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
-<meta name="description" content="A description of the page">
+<!-- 此頁面的簡短描述（限制 150 個字元） -->
+<!-- 在 *某些* 情況下，描述會成為搜尋結果片段的一部分。 -->
+<meta name="description" content="一段頁面描述">
 
-<!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<!-- 控制搜尋引擎的抓取和索引行為 -->
+<meta name="robots" content="index,follow"><!-- 所有搜尋引擎 -->
+<meta name="googlebot" content="index,follow"><!-- 僅限 Google -->
 
-<!-- Tells Google not to show the sitelinks search box -->
+<!-- 告訴 Google 不顯示網站鏈結的搜尋框 -->
 <meta name="google" content="nositelinkssearchbox">
 
-<!-- Tells Google not to provide a translation for this page -->
+<!-- 告訴 Google 不提供此頁面翻譯 -->
 <meta name="google" content="notranslate">
 
-<!-- Verify ownership for Google Search Console -->
+<!-- 驗證 Google 網站管理員工具所有權 -->
 <meta name="google-site-verification" content="verification_token">
 
-<!-- Verify ownership for Yandex Webmasters -->
+<!-- 驗證 Yandex 網站管理員所有權 -->
 <meta name="yandex-verification" content="verification_token">
 
-<!-- Verify ownership for Bing Webmaster Center -->
+<!-- 驗證 Bing 網站管理員中心所有權 -->
 <meta name="msvalidate.01" content="verification_token">
 
-<!-- Verify ownership for Alexa Console -->
+<!-- 驗證 Alexa 控制台所有權 -->
 <meta name="alexaVerifyID" content="verification_token">
 
-<!-- Verify ownership for Pinterest Console-->
+<!-- 驗證 Pinterest 控制台所有權-->
 <meta name="p:domain_verify" content="code from pinterest">
 
-<!-- Verify ownership for Norton Safe Web -->
+<!-- 驗證 Norton 安全網頁所有權 -->
 <meta name="norton-safeweb-site-verification" content="norton code">
 
-<!-- Used to name software used to build the website (i.e. - WordPress, Dreamweaver) -->
+<!-- 用來命名建立網站的軟體（例如：WordPress、Dreamweaver） -->
 <meta name="generator" content="program">
 
-<!-- Short description of your site's subject -->
-<meta name="subject" content="your website's subject">
+<!-- 簡短描述你的網站主題 -->
+<meta name="subject" content="你的網站主題">
 
-<!-- Gives a general age rating based on sites content -->
+<!-- 為你的網站內容加入年齡分級 -->
 <meta name="rating" content="General">
 
-<!-- Allows control over how referrer information is passed -->
+<!-- 允許控制 referrer 資訊如何傳遞 -->
 <meta name="referrer" content="no-referrer">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- 停用對於電話號碼自動檢測和格式化 -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Completely opt out of DNS prefetching by setting to 'off' -->
+<!-- 設定為 'off' 完全退出 DNS 預先載入 -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
-<!-- Stores cookie on the client web browser for client identification -->
+<!-- 為使用者識別在用戶網頁瀏覽器儲存 cookie -->
 <meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
 
-<!-- Specifies the page to appear in a specific frame -->
+<!-- 指定要顯示於一個特定框架中的頁面 -->
 <meta http-equiv="Window-Target" content="_value">
 
-<!-- Geo tags -->
+<!-- 地理標籤 -->
 <meta name="ICBM" content="latitude, longitude">
 <meta name="geo.position" content="latitude;longitude">
-<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
+<meta name="geo.region" content="country[-state]"><!-- 國家代碼 (ISO 3166-1): 強制性，州代碼 (ISO 3166-2): 選用; 例如 content="US" / content="US-NY" -->
+<meta name="geo.placename" content="city/town"><!-- 例如 content="New York City" -->
 ```
 
-- [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
-- [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
-- [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
-- [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
+- [Google 可以識別的 Meta 標籤](https://support.google.com/webmasters/answer/79812?hl=en)
+- [WHATWG Wiki: Meta 拓展](https://wiki.whatwg.org/wiki/MetaExtensions)
+- [ICBM - 維基百科](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
+- [地理標記 - 維基百科](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Link
+## 鏈結
 
 ``` html
-<!-- Points to a CSS stylesheet -->
+<!-- 指定一個 CSS 樣式表 -->
 <link rel="stylesheet" href="https://example.com/styles.css">
 
-<!-- Helps prevent duplicate content issues -->
+<!-- 有助於避免多重內容問題 -->
 <link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 
-<!-- Used to be included before the icon link, but is deprecated and no longer is used -->
+<!-- 之前用於包含圖示鏈結，但現已被廢棄且不再使用 -->
 <link rel="shortlink" href="https://example.com/?p=42">
 
-<!-- Links to an AMP HTML version of the current document -->
+<!-- 連結到當前文件的 AMP HTML 版本 -->
 <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
 
-<!-- Links to a JSON file that specifies "installation" credentials for web applications -->
+<!-- 連結到一個指定網頁應用程式「安裝」證書的 JSON 檔案 -->
 <link rel="manifest" href="manifest.json">
 
-<!-- Links to the author of the document -->
+<!-- 連結到文件的作者 -->
 <link rel="author" href="humans.txt">
 
-<!-- Refers to a copyright statement that applies to the links context -->
+<!-- 指向一個適用於鏈結內容的版權申明 -->
 <link rel="license" href="copyright.html">
 
-<!-- Gives a reference to a location in your document that may be in another language -->
+<!-- 提供文件中可能使用的其他語言位置 -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
-<!-- Gives information about an author or another person -->
+<!-- 提供有關作者和其他人的資訊 -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
 
-<!-- Links to a document that describes a collection of records, documents, or other materials of historical interest. -->
+<!-- 連結到一個描述歷史紀錄、文件或其他具有歷史意義資料的彙整。 -->
 <link rel="archives" href="https://example.com/archives/">
 
-<!-- Links to top level resource in an hierarchical structure -->
+<!-- 連結到層次結構中的最頂層資源 -->
 <link rel="index" href="https://example.com/">
 
 <!-- Gives a self reference - useful when the document has multiple possible references -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
 
-<!-- The first, next, previous, and last documents in a series of documents, respectively -->
+<!-- 分別是一系列文件中的第一個、下一個、前一個和最後一個 -->
 <link rel="first" href="https://example.com/atomFeed.php">
 <link rel="next" href="https://example.com/atomFeed.php?page=4">
 <link rel="prev" href="https://example.com/atomFeed.php?page=2">
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
 
-<!-- Used when using a 3rd party service to maintain a blog -->
+<!-- 當使用第三方服務來維護網誌時會用到 -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
-<!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
+<!-- 當其他 WordPress 網誌連結到你的 WordPress 網誌或文章時建立一個自動化的留言 -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
-<!-- Notifies a url when you link to it on your site -->
+<!-- 當你在自己的頁面上連結到一個 URL 時通知它 -->
 <link rel="webmention" href="https://example.com/webmention">
 
-<!-- Loads in an external HTML file into the current HTML file -->
+<!-- 載入一個外部 HTML 檔案至當前 HTML 檔案中 -->
 <link rel="import" href="/path/to/component.html">
 
-<!-- Open Search -->
-<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
+<!-- 開放搜尋 -->
+<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="搜尋標題">
 
 <!-- Feeds -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
 <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 
-<!-- Prefetching, preloading, prebrowsing -->
+<!-- 預先載入、讀取、瀏覽 -->
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
 <link rel="prerender" href="https://example.com/">
 <link rel="preload" href="image.png" as="image">
-<!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+<!-- 更多資訊：https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-### Favicons
+### 網站圖示
 
 ``` html
-<!-- For IE 10 and below -->
-<!-- Place favicon.ico in the root directory - no tag necessary -->
+<!-- 針對 IE 10 及以下版本 -->
+<!-- 將 favicon.ico 放在你的根目錄下，無須標籤 -->
 
-<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+<!-- 對於 IE 11、Chrome、Firefox、Safari、Opera -->
 <link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
 ```
 
-- [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
-- [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
+- [所有關於網站圖示（及觸控圖示）資訊](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- [Favicon 對照表](https://github.com/audreyr/favicon-cheat-sheet)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Social
+## 社群網站
 
 ### Facebook Open Graph
 
@@ -266,18 +266,18 @@ Below are the essential tags for basic, minimalist websites:
 <meta property="fb:app_id" content="123456789">
 <meta property="og:url" content="https://example.com/page.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Content Title">
+<meta property="og:title" content="內容標題">
 <meta property="og:image" content="https://example.com/image.jpg">
-<meta property="og:description" content="Description Here">
-<meta property="og:site_name" content="Site Name">
+<meta property="og:description" content="在這裡寫上描述">
+<meta property="og:site_name" content="網站名稱">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="">
 ```
 
-- [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
-- [Open Graph protocol](http://ogp.me/)
+- [Facebook 的 Open Graph 標記](https://developers.facebook.com/docs/sharing/webmasters#markup)
+- [Open Graph 協定](http://ogp.me/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
 ### Facebook Instant Articles
 
@@ -285,17 +285,17 @@ Below are the essential tags for basic, minimalist websites:
 <meta charset="utf-8">
 <meta property="op:markup_version" content="v1.0">
 
-<!-- The URL of the web version of your article -->
+<!-- 你的文章 Web 版網址 -->
 <link rel="canonical" href="http://example.com/article.html">
 
-<!-- The style to be used for this article -->
+<!-- 用於文章的樣式 -->
 <meta property="fb:article_style" content="myarticlestyle">
 ```
 
-- [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
+- [Facebook Instant Articles：建立文章](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- [Instant Articles：格式參考](https://developers.facebook.com/docs/instant-articles/reference)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
 ### Twitter Cards
 
@@ -304,36 +304,36 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
 <meta name="twitter:url" content="https://example.com/page.html">
-<meta name="twitter:title" content="Content Title">
-<meta name="twitter:description" content="Content description less than 200 characters">
+<meta name="twitter:title" content="內容標題">
+<meta name="twitter:description" content="內容描述少於 200 個字元">
 <meta name="twitter:image" content="https://example.com/image.jpg">
 ```
 
-- [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
-- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- [Twitter Cards：入門指南](https://dev.twitter.com/cards/getting-started)
+- [Twitter Card 驗證工具](https://cards-dev.twitter.com/validator)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
 ### Google+ / Schema.org
 
 ``` html
 <link href="https://plus.google.com/+YourPage" rel="publisher">
-<meta itemprop="name" content="Content Title">
-<meta itemprop="description" content="Content description less than 200 characters">
+<meta itemprop="name" content="內容標題">
+<meta itemprop="description" content="內容描述少於 200 個字元">
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
 ### Pinterest
 
-Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
+根據[他們的幫助中心](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site)說明，Pinterest 允許你禁止其他人儲存你網站裡的內容。`description` 為選填。
 
 ``` html
-<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
+<meta name="pinterest" content="nopin" description="抱歉，你不能從我的網站儲存內容！">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
 ### OEmbed
 
@@ -346,99 +346,99 @@ Pinterest lets you prevent people from saving things from your website, accordin
   title="oEmbed Profile: XML">
 ```
 
-- [oEmbed format](http://oembed.com/)
+- [oEmbed 格式](http://oembed.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Browsers / Platforms
+## 瀏覽器 / 平台
 
 ### Apple iOS
 
 ``` html
-<!-- Smart App Banner -->
+<!-- 智慧型應用程式橫幅 -->
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- 停用對於電話號碼自動檢測和格式化 -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Add to Home Screen -->
+<!-- 新增至主畫面 -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="App Title">
+<meta name="apple-mobile-web-app-title" content="應用程式標題">
 
-<!-- Touch Icons -->
-<!-- In most cases, one 180×180px touch icon in the head is enough -->
+<!-- 觸控圖示 -->
+<!-- 大多數情況下，在 `<head>` 中一個 180×180px 觸控圖示就已經足夠 -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
-<!-- Note: Safari on iOS 7 doesn’t add effects to icons. -->
-<!-- Older versions of Safari will not add effects for icon files named with the -precomposed.png suffix. -->
+<!-- 注意：iOS 7 的 Safari 不會對圖示產生效果。 -->
+<!-- 更早版本的 Safari 不會對以 -precomposed.png 後綴命名的圖示檔案產生效果。 -->
 
-<!-- Startup Image ( Deprecated ) -->
+<!-- 啟動畫面（已失效） -->
 <link rel="apple-touch-startup-image" href="/path/to/startup.png">
 
-<!-- iOS app deep linking -->
+<!-- iOS 應用程式深度鏈結 -->
 <meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
 <link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
 
-- [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+- [Apple Meta 標籤](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
 ### Apple Safari
 
 ```html
-<!-- Pinned Site -->
+<!-- 固定網站 -->
 <link rel="mask-icon" href="/path/to/icon.svg" color="red">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
 ### Google Android
 
 ``` html
 <meta name="theme-color" content="#E64545">
 
-<!-- Add to home screen -->
+<!-- 新增至主畫面 -->
 <meta name="mobile-web-app-capable" content="yes">
-<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+<!-- 更多資訊：https://developer.chrome.com/multidevice/android/installtohomescreen -->
 
-<!-- Android app deep linking -->
+<!-- Android 應用程式深度鏈結 -->
 <meta name="google-play-app" content="app-id=package-name">
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
 ### Google Chrome
 
 ``` html
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
 
-<!-- Disable translation prompt -->
+<!-- 停用翻譯提示 -->
 <meta name="google" content="notranslate">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-### Google Chrome Mobile (Android Only)
+### Google Chrome 行動版（只針對 Android）
 
-Since Chrome 31, you can set up your web app to "app mode" like Safari.
+從 Chrome 31 開始，你可以設定你的網頁應用程式為「app mode」，例如 Safari。
 
 ``` html
-<!-- Link to a manifest and define the manifest metadata. -->
-<!-- The example of manifest.json could be found in the link below. -->
+<!-- 連結到一個 manifest 並定義 manifest 的 Metadata。 -->
+<!-- 範例中的 manifest.json 也可以透過以下鏈結找到。 -->
 <link rel="manifest" href="manifest.json">
 
-<!-- Define your web page as a web app -->
+<!-- 定義你的網頁為網頁應用程式 -->
 <meta name="mobile-web-app-capable" content="yes">
 
-<!-- Homescreen Icon  -->
+<!-- 主畫面圖示 -->
 <link rel="icon" sizes="192x192" href="highres-icon.png">
 ```
 
-- [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
+- [Google 開發者](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
 ### Microsoft Internet Explorer
 
@@ -446,10 +446,10 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
-<!-- IE10: Disable link highlighting upon tap (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
+<!-- IE10：停用鏈結點擊後高亮效果 (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
 <meta name="msapplication-tap-highlight" content="no">
 
-<!-- Pinned sites (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
+<!-- 固定網站 (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
 <meta name="application-name" content="Sample Title">
 <meta name="msapplication-tooltip" content="A description of what this site does.">
 <meta name="msapplication-starturl" content="http://example.com/index.html?pinned=true">
@@ -466,9 +466,9 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="msapplication-task-separator" content="1">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## App Links
+## 應用程式鏈結
 
 ``` html
 <!-- iOS -->
@@ -481,150 +481,150 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta property="al:android:package" content="org.applinks">
 <!-- Web Fallback -->
 <meta property="al:web:url" content="http://applinks.org/documentation">
-<!-- More info: http://applinks.org/documentation/ -->
+<!-- 更多資訊：http://applinks.org/documentation/ -->
 ```
 
-- [App Links Docs](http://applinks.org/documentation/)
+- [應用程式鏈結說明文件](http://applinks.org/documentation/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Browsers (Chinese)
+## 中國瀏覽器
 
-### 360 Browser
+### 360 瀏覽器
 
 ``` html
-<!-- select rendering engine in order -->
+<!-- 選擇渲染引擎 -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-### QQ Mobile Browser
+### QQ 行動瀏覽器
 
 ``` html
-<!-- Locks the screen into the specified orientation -->
+<!-- 在指定方向上鎖定螢幕（鎖定橫向或直向螢幕） -->
 <meta name="x5-orientation" content="landscape/portrait">
-<!-- Display this page in fullscreen -->
+<!-- 在全螢幕狀態下顯示此頁面 -->
 <meta name="x5-fullscreen" content="true">
-<!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
+<!-- 頁面將以「應用程式模式」顯示（全螢幕等等） -->
 <meta name="x5-page-mode" content="app">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-### UC Mobile Browser
+### UC 行動瀏覽器
 
 ``` html
-<!-- Locks the screen into the specified orientation -->
+<!-- 在指定方向上鎖定螢幕（鎖定橫向或直向螢幕） -->
 <meta name="screen-orientation" content="landscape/portrait">
-<!-- Display this page in fullscreen -->
+<!-- 在全螢幕狀態下顯示此頁面 -->
 <meta name="full-screen" content="yes">
-<!-- UC browser will display images even if in "text mode" -->
+<!-- 即使在「文字模式」下，UC 瀏覽器也會顯示圖片 -->
 <meta name="imagemode" content="force">
-<!-- Page will be displayed in "application mode"(fullscreen,forbiding gesture, etc.) -->
+<!-- 頁面將以「應用程式模式」顯示（全螢幕、禁止手勢等等） -->
 <meta name="browsermode" content="application">
-<!-- Disabled the UC browser's "night mode" in this page -->
+<!-- 在此頁面停用 UC 瀏覽器的「夜間模式」 -->
 <meta name="nightmode" content="disable">
-<!-- Simplify the page to reduce data transfer -->
+<!-- 簡化頁面，減少資料傳輸量 -->
 <meta name="layoutmode" content="fitscreen">
-<!-- Disable the UC browser's feature of "scaling font up when there are many words in this page" -->
+<!-- 在此頁面停用 UC 瀏覽器的「當此頁面中有較多文字時縮放字體」功能 -->
 <meta name="wap-font-scale" content="no">
 ```
 
-- [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
+- [UC 瀏覽器說明文件](http://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Notes
+## 注意
 
-### Performance
-Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base` and `link` tags.
+### 效能
+當 GZIP 啟用時，將 `href` 屬性移到該元件的開頭以提高壓縮，因為 `href` 屬性也被用於 `a`、 `base` 和 `link` 標籤。
 
-Example:
+範例：
 
 ``` html
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Other Resources
+## 其他資源
 
-- [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
-- [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
+- [HTML5 模版文件：HTML 標籤](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
+- [HTML5 模版文件：擴展和自定](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Related Projects
+## 相關專案
 
-- [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
-- [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text package for `HEAD` snippets
-- [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
-- [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
+- [Atom HTML Head 程式碼](https://github.com/joshbuchea/atom-html-head-snippets) - Atom `HEAD` 程式碼
+- [Sublime Text HTML Head 程式碼](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text `HEAD` 程式碼
+- [head-it](https://github.com/hemanth/head-it) - CLI 介面的 `HEAD` 程式碼
+- [vue-head](https://github.com/ktquez/vue-head) - 在 Vue.js 中操作 `HEAD` 標籤的 Meta 資訊
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Other Formats
+## 其他格式
 
 - [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Translations
+## 翻譯
 
-- [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
-- [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
-- [Italian](https://github.com/Fakkio/HEAD)
-- [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- [Russian/Русский](https://github.com/Konfuze/HEAD)
-- [Turkish/Türkçe](https://github.com/mkg0/HEAD)
-- [Korean](https://github.com/Lutece/HEAD)
+- [巴西葡萄牙語](https://github.com/Webschool-io/HEAD)
+- [中文（簡體）](https://github.com/Amery2010/HEAD)
+- [義大利語](https://github.com/Fakkio/HEAD)
+- [日語](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- [俄羅斯語](https://github.com/Konfuze/HEAD)
+- [土耳其語](https://github.com/mkg0/HEAD)
+- [韓語](https://github.com/Lutece/HEAD)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Contributing
+## 貢獻
 
-**Open an issue or a pull request to suggest changes or additions.**
+**開啟一個 issue 或一個 pull 請求來提出修改或補充。**
 
-### Guide
+### 指南
 
-The **HEAD** repository consists of two branches:
+**HEAD** repository 由兩個分支組成：
 
 #### 1. `master`
 
-This branch consists of the `README.md` file that is automatically reflected on the [\<head> Cheat Sheet](http://gethead.info/) website. All changes to the content of the cheat sheet as such should be directed to this file.
+對於此分支內包含的 `README.md` 檔案修改會自動反映在 [\<head> Cheat Sheet](http://gethead.info/) 網站上。所有對照表內容變更都應該針對此檔案。
 
-Please follow these steps for pull requests:
+請依照下列步驟提交 pull 請求：
 
-- Modify only one tag, or one related set of tags at a time
-- Use double quotes on attributes
-- Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
-- Consider including a link to documentation that supports your change
+- 只修改一個標籤，或一次一組相關的標籤
+- 對屬性使用雙引號
+- 請不要在自我關閉元件中使用斜線 — 即使 HTML5 規範裡說它們是選用的
+- 考慮在文件中加入鏈結以支持你的變更
 
 #### 2. `gh-pages`
 
-This branch is responsible for the [\<head> Cheat Sheet](http://gethead.info/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` Markdown file through [GitHub Pages](https://pages.github.com/). All website related modifications must be directed here.
+該分支負責 [\<head> Cheat Sheet](http://gethead.info/) 網站。我們使用 [Jekyll](https://jekyllrb.com/) 透過 [GitHub Pages](https://pages.github.com/) 服務來部屬 `README.md` 文件。所有網站相關的修改必須集中在這裡。
 
-You might want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
+你可以透過 [Jekyll 說明文件](https://jekyllrb.com/docs/home/) 來了解 Jekyll 如何在該分支上運作。
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-### Contributors
+### 貢獻者
 
-Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
+看看這些超級棒的[貢獻者們](https://github.com/joshbuchea/HEAD/graphs/contributors)。
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## Author
+## 作者
 
 **[Josh Buchea](http://joshbuchea.com/)**
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
 
-## License
+## 授權
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-To the extent possible under law, [Josh Buchea](http://joshbuchea.com) has waived all copyright and related or neighboring rights to this work.
+在法律範圍內，[Josh Buchea](http://joshbuchea.com) 已經放棄這項工作的所有版權以及相關或鄰近的權利。
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 返回頂端](#table-of-contents)**
